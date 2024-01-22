@@ -3,6 +3,10 @@
 
 # COMMAND ----------
 
+dbutils.library.restartPython()   
+
+# COMMAND ----------
+
 lesson_config = LessonConfig(name = None,
                              create_schema = True,
                              create_catalog = False,
