@@ -72,7 +72,13 @@
 -- COMMAND ----------
 
 -- TODO
-<FILL_IN>
+-- create managed delta table named events_raw using the same schema
+CREATE or replace TABLE events_raw as
+select * from 
+
+-- show schema of the events_raw table
+DESCRIBE events_raw;
+
 
 -- COMMAND ----------
 
@@ -172,7 +178,8 @@
 -- COMMAND ----------
 
 -- TODO
-<FILL_IN> ${da.paths.datasets}/ecommerce/raw/item-lookup
+CREATE or REPLACE TABLE product_details AS
+Select * from PARQUET.`${da.paths.datasets}/ecommerce/raw/item-lookup`
 
 -- COMMAND ----------
 

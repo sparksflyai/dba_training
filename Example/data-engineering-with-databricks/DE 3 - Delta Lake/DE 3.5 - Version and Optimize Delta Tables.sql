@@ -73,6 +73,7 @@ SET value = value + 1
 WHERE name LIKE "T%";
 
 DELETE FROM students 
+
 WHERE value > 6;
 
 CREATE OR REPLACE TEMP VIEW updates(id, name, value, type) AS VALUES
