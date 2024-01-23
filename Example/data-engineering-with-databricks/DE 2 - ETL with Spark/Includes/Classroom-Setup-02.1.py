@@ -24,3 +24,7 @@ DA.paths.kafka_events = f"{DA.paths.datasets}/ecommerce/raw/events-kafka"
 
 DA.conclude_setup()                      # Conclude setup by advertising environmental changes
 
+
+# COMMAND ----------
+
+
